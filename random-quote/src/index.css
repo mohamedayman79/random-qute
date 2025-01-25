@@ -1,0 +1,65 @@
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  #quote-box {
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.5s ease;
+  }
+  
+  #text,
+  #author {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  #text.visible,
+  #author.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .link-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .link-button a,
+  .link-button button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .link-button a {
+    background-color: #1da1f2;
+    color: white;
+  }
+  
+  .link-button button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  .link-button a:hover {
+    background-color: #0d8bd9;
+  }
+  
+  .link-button button:hover {
+    background-color: #0056b3;
+  }
+  
